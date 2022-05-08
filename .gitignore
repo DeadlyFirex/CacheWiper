@@ -53,3 +53,6 @@ dkms.conf
 
 # CMake debug directories
 cmake-build-debug/
+
+# CLion (JetBrains)
+.idea/
