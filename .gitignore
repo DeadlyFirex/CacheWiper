@@ -56,3 +56,6 @@ cmake-build-debug/
 
 # CLion (JetBrains)
 .idea/
+
+# Output files
+output*
