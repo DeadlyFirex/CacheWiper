@@ -33,28 +33,13 @@ jobs:
       # Build your program with the GNU/GCC compiler
       run: gcc -o output.o main.c -lncurses && chmod +x output.o
 
+    - name: Run
+      working-directory: ${{github.workspace}}
+      # Execute version check
+      run: ./output.o --version
+      
     - name: Test
       working-directory: ${{github.workspace}}/build
       # Execute tests defined by the CMake configuration.  
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       run: ctest -C ${{env.BUILD_TYPE}}
-      
-    - name: Run
-      working-directory: ${{github.workspace}}/build
-      # Execute version check
-      run: sudo apt-get install tree
-    
-    - name: Run1
-      working-directory: ${{github.workspace}}/build
-      # Execute version check
-      run: tree
-      
-    - name: Run2
-      working-directory: ${{github.workspace}}
-      # Execute version check
-      run: tree
-      
-    - name: Run3
-      working-directory: ${{github.workspace}}
-      # Execute version check
-      run: ./output.o --version
