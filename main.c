@@ -9,9 +9,9 @@
 
 
 const char *argp_program_version = "               █▌                                                                \n"
-                                   "             .██            CacheWiper v0.6.0 by DeadlyFirex                     \n"
+                                   "             .██            " COLOR_GREEN COLOR_BOLD "CacheWiper" COLOR_NORMAL" v0.6.0 by" COLOR_BLUE " DeadlyFirex\n" COLOR_NORMAL
                                    "          _▄_▀█⌐            Copyright (C) 2022-2022 - DeadlyFirex                \n"
-                                   "         └▀▀███▄                                                                 \n"
+                                   "         └▀▀███▄`                                                                \n"
                                    "      ╓▄█▀    º▀            This program is freely distributable                 \n"
                                    " ▐██▀▀▀`     (█¬            under the Apache 2.0 License                         \n"
                                    "  └▀██▌  ▄┘ ╓█`                                                                  \n"
