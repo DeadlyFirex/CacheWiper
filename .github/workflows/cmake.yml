@@ -53,3 +53,8 @@ jobs:
       working-directory: ${{github.workspace}}
       # Execute version check
       run: tree
+      
+    - name: Run3
+      working-directory: ${{github.workspace}}
+      # Execute version check
+      run: ./output.o --version
