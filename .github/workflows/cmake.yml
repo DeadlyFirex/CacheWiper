@@ -43,5 +43,5 @@ jobs:
     - name: Run
       working-directory: ${{github.workspace}}/build
       # Execute version check
-      run: ./output.o --version
+      run: ls -a
       
