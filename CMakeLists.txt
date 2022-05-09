@@ -3,4 +3,4 @@ project(CacheWiper C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(CacheWiper main.c utils/color.c utils/color.h)
+add_executable(CacheWiper main.c utils/color.c utils/color.h utils/utils.c utils/utils.h)

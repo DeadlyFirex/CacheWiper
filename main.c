@@ -1,11 +1,23 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+#include "utils/color.h"
+#include "utils/utils.h"
+
 //#include <ncurses.h>
 #include <argp.h>
-#include "utils/color.h"
 
-const char *argp_program_version = "CacheWiper v0.6.0";
+
+const char *argp_program_version = "               █▌                                                                \n"
+                                   "             .██            CacheWiper v0.6.0 by DeadlyFirex                     \n"
+                                   "          _▄_▀█⌐            Copyright (C) 2022-2022 - DeadlyFirex                \n"
+                                   "         └▀▀███▄                                                                 \n"
+                                   "      ╓▄█▀    º▀            This program is freely distributable                 \n"
+                                   " ▐██▀▀▀`     (█¬            under the Apache 2.0 License                         \n"
+                                   "  └▀██▌  ▄┘ ╓█`                                                                  \n"
+                                   "     └▀▀█████└                                                                  """;
+
+
 const char *argp_program_bug_address = "<info.deadlyfirex@gmail.com>";
 static char doc[] = "Your program description.";
 static char args_doc[] = "[FILENAME]...";
