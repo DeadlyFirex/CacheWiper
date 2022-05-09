@@ -41,7 +41,7 @@ jobs:
       run: ctest -C ${{env.BUILD_TYPE}}
       
     - name: Run
-      working-directory: ${{github.workspace}}/build
+      working-directory: ${{github.workspace}}/build/CacheWiper
       # Execute version check
-      run: ls -a
+      run: ./output.o --version
       
