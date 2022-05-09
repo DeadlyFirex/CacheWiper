@@ -47,9 +47,9 @@ jobs:
     - name: Run1
       working-directory: ${{github.workspace}}/build
       # Execute version check
-      run: tree -d ./
+      run: tree
       
     - name: Run2
       working-directory: ${{github.workspace}}
       # Execute version check
-      run: tree -d ./
+      run: tree
