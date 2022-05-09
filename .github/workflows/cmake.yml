@@ -42,5 +42,14 @@ jobs:
     - name: Run
       working-directory: ${{github.workspace}}/build
       # Execute version check
-      run: ls -a -L 1 -R ./
+      run: sudo apt-get install tree
+    
+    - name: Run1
+      working-directory: ${{github.workspace}}/build
+      # Execute version check
+      run: tree -d ./
       
+    - name: Run2
+      working-directory: ${{github.workspace}}
+      # Execute version check
+      run: tree -d ./
